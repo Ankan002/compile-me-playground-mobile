@@ -1,12 +1,21 @@
 import { SafeAreaView, Text } from "react-native";
-import { styles } from "./styles";
+import { darkStyles, lightStyles } from "./styles";
 import { StatusBar } from "expo-status-bar";
+import { useThemeStore } from "@/src/store";
 
 const HomeScreen = () => {
+	const { theme } = useThemeStore();
+
 	return (
-		<SafeAreaView style={styles.Container}>
-			<Text>Home Screen</Text>
-            <StatusBar style="dark" />
+		<SafeAreaView
+			style={
+				theme === "dark" ? darkStyles.Container : lightStyles.Container
+			}
+		>
+			<Text style={theme === "dark" ? darkStyles.Text : lightStyles.Text}>
+				Home Screen
+			</Text>
+			<StatusBar style={theme === "dark" ? "light" : "dark"} />
 		</SafeAreaView>
 	);
 };
