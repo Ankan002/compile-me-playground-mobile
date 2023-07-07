@@ -13,6 +13,10 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@expo-google-fonts/fira-code": "^0.2.3",
+    "@expo-google-fonts/jetbrains-mono": "^0.2.3",
+    "@expo-google-fonts/quicksand": "^0.2.3",
+    "@expo-google-fonts/source-code-pro": "^0.2.3",
     "@expo/vector-icons": "^13.0.0",
     "@react-navigation/native": "^6.0.2",
     "@rivascva/react-native-code-editor": "^1.2.2",

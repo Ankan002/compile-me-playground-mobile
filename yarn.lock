@@ -1197,6 +1197,26 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
+"@expo-google-fonts/fira-code@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/fira-code/-/fira-code-0.2.3.tgz#1316c8c618747f60c098caaf9394a4e57885b5f4"
+  integrity sha512-rrl8TxYYuAO4xGKlOatEDLUH8mkrGc+ywG54BfL649hHTg2K5UwfT2k7jg7YMhw48FPQ0ebyt4ISoRc3fhyHjg==
+
+"@expo-google-fonts/jetbrains-mono@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/jetbrains-mono/-/jetbrains-mono-0.2.3.tgz#792308dcf5abac363c16bc067bb71f09c87daeee"
+  integrity sha512-TlAlQzlDYT/cwg3kjME54P/iOl5dxv+EZ0iYSMZ6+3Jhw0oImBI/BVPVKLP+KT+sAs8ze1FvGTYXrtfiYolxtw==
+
+"@expo-google-fonts/quicksand@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/quicksand/-/quicksand-0.2.3.tgz#4838a1b380eefaa8478e63e6f113bd1b495c29d7"
+  integrity sha512-cQhYsOYPBbKzqry0TT87fJz8ZlCKLLeHiECsjI9zRx4pMB3XKnHSWNO7JBDvMA6w9ekcQ17aaBZ4vj9RC2Kgtw==
+
+"@expo-google-fonts/source-code-pro@^0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@expo-google-fonts/source-code-pro/-/source-code-pro-0.2.3.tgz#131683d0c7ddb13bc5998a7767f06bd452678b23"
+  integrity sha512-ZYnOfLf/yppfK942VEY0iH/hjplv7/oYDSCLrFo5yKPGSgeSG1nrg2kLT9VB6rvRSJ8k839kCB/0O/f1Qbe25g==
+
 "@expo/bunyan@4.0.0", "@expo/bunyan@^4.0.0":
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/@expo/bunyan/-/bunyan-4.0.0.tgz#be0c1de943c7987a9fbd309ea0b1acd605890c7b"
