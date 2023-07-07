@@ -22,7 +22,13 @@ const HomeHeader = () => {
 						: lightStyles.LanguageContainer
 				}
 			>
-				<Text>
+				<Text
+					style={
+						theme == "dark"
+							? darkStyles.LanguageText
+							: lightStyles.LanguageText
+					}
+				>
 					{language.languageName}
 				</Text>
 			</View>

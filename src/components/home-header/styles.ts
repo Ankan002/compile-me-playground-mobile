@@ -13,15 +13,21 @@ const styles = (theme: "light" | "dark") => {
 		LanguageContainer: {
 			flex: 1,
 			height: 40,
+			flexDirection: "row",
 			justifyContent: "center",
-			alignItems: "center",
-			borderWidth: 1,
+			borderWidth: 1.5,
 			borderColor:
 				theme === "dark" ? colors.primaryLight : colors.primaryDark,
 			borderRadius: 8,
 			backgroundColor:
 				theme === "dark" ? colors.secondaryDark : colors.secondaryLight,
-			paddingHorizontal: 5
+			paddingHorizontal: 5,
+		},
+		LanguageText: {
+			fontFamily: "Quicksand_600SemiBold",
+			fontSize: 20,
+			letterSpacing: 1.5,
+			color: theme === "dark" ? colors.primaryLight : colors.primaryDark,
 		},
 	});
 };
