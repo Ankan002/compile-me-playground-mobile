@@ -9,9 +9,16 @@ const styles = (theme: "light" | "dark") => {
 				theme === "light" ? colors.primaryLight : colors.primaryDark,
 			paddingTop: Platform.OS === "android" ? StatusBar.currentHeight : 0,
 		},
-		Text: {
-			color: theme === "light" ? colors.primaryDark : colors.primaryLight,
-			fontSize: 17,
+		CodeEditorContainer: {
+			flex: 1,
+			marginTop: 10,
+			borderTopWidth: 2,
+			borderRightWidth: 2,
+			borderLeftWidth: 2,
+			borderTopLeftRadius: 20,
+			borderTopRightRadius: 20,
+			borderColor:
+				theme === "dark" ? colors.primaryLight : colors.primaryDark,
 		},
 	});
 };

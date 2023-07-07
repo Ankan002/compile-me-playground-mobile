@@ -1,4 +1,4 @@
-import { SafeAreaView } from "react-native";
+import { SafeAreaView, View } from "react-native";
 import { darkStyles, lightStyles } from "./styles";
 import { StatusBar } from "expo-status-bar";
 import { useThemeStore } from "@/src/store";
@@ -14,6 +14,14 @@ const HomeScreen = () => {
 			}
 		>
 			<HomeHeader />
+			<View
+				style={
+					theme === "dark"
+						? darkStyles.CodeEditorContainer
+						: lightStyles.CodeEditorContainer
+				}
+			>
+			</View>
 			<StatusBar style={theme === "dark" ? "light" : "dark"} />
 		</SafeAreaView>
 	);
