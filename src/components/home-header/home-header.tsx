@@ -1,10 +1,11 @@
-import { useThemeStore } from "@/src/store";
-import { View } from "react-native";
+import { useLanguageStore, useThemeStore } from "@/src/store";
+import { View, Text } from "react-native";
 import { darkStyles, lightStyles } from "./styles";
 import { HomeActionButton } from "@/src/components/elements";
 
 const HomeHeader = () => {
 	const { theme } = useThemeStore();
+	const { language } = useLanguageStore();
 
 	return (
 		<View
@@ -14,6 +15,18 @@ const HomeHeader = () => {
 					: lightStyles.HeaderContainer
 			}
 		>
+			<View
+				style={
+					theme === "dark"
+						? darkStyles.LanguageContainer
+						: lightStyles.LanguageContainer
+				}
+			>
+				<Text>
+					{language.languageName}
+				</Text>
+			</View>
+
 			<HomeActionButton icon="ai" action={() => console.log("HELLO!!")} />
 
 			<HomeActionButton
