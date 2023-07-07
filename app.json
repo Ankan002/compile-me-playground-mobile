@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "compile-me-playground-mobile",
-    "slug": "compile-me-playground-mobile",
+    "name": "Compile Me Playground",
+    "slug": "compile-me-playground",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
@@ -22,7 +22,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.compileme.playground"
     },
     "web": {
       "bundler": "metro",
@@ -35,6 +36,14 @@
     "experiments": {
       "tsconfigPaths": true,
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "a663c30f-f0cf-43ce-b14a-662f54ebbb69"
+      }
     }
   }
 }
