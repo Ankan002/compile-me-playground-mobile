@@ -8,7 +8,7 @@ interface CodeStore {
 export const useCodeStore = create<CodeStore>()((set) => ({
 	code: "",
 	setCode: (newCode) =>
-		set((prevCode) => ({
-			code: prevCode + newCode,
+		set(() => ({
+			code: newCode,
 		})),
 }));

@@ -3,6 +3,7 @@ import { darkStyles, lightStyles } from "./styles";
 import { StatusBar } from "expo-status-bar";
 import { useThemeStore } from "@/src/store";
 import { HomeHeader } from "@/src/components/home-header";
+import { CustomCodeEditor } from "@/src/components/custom-code-editor";
 
 const HomeScreen = () => {
 	const { theme } = useThemeStore();
@@ -21,6 +22,7 @@ const HomeScreen = () => {
 						: lightStyles.CodeEditorContainer
 				}
 			>
+				<CustomCodeEditor />
 			</View>
 			<StatusBar style={theme === "dark" ? "light" : "dark"} />
 		</SafeAreaView>

@@ -11,12 +11,8 @@ const styles = (theme: "light" | "dark") => {
 		},
 		CodeEditorContainer: {
 			flex: 1,
-			marginTop: 10,
-			borderTopWidth: 2,
-			borderRightWidth: 2,
-			borderLeftWidth: 2,
-			borderTopLeftRadius: 20,
-			borderTopRightRadius: 20,
+			marginTop: 20,
+			borderTopWidth: 1,
 			borderColor:
 				theme === "dark" ? colors.primaryLight : colors.primaryDark,
 		},
